@@ -1,4 +1,4 @@
-Cube VirtualPrinter Console
+CubeVPC
 ====
 
 Copyright © 2010 CubeSoft, Inc.  
@@ -10,7 +10,8 @@ https://www.cube-soft.jp/
 Cube VirtualPrinter Console (CubeVPC) は、仮想プリンタのインストール
 およびアンインストールを実行するためのコマンドライン型アプリケーションです。
 CubeVPC を使用するには、.NET Framework 3.5 以降がインストールされている
-必要があります。.NET Framework は、以下の URL からダウンロードして下さい。
+必要があります（.NET Framework 4.5 以降を強く推奨）。
+.NET Framework は、以下の URL からダウンロードして下さい。
 
 * Download .NET Framework  
   https://dotnet.microsoft.com/download/dotnet-framework
@@ -49,9 +50,10 @@ JSON 形式のファイルへのパスを記載します。
   ディレクトリからの相対パスとして認識します。
 * **-Force**  
   JSON ファイルに記載されたプリンタドライバやポートモニタに依存する全ての要素を
-  強制的にアンインストールします。このオプションを指定しない場合、対象となる
-  プリンタドライバ等が他のプリンタに使用されているなどの理由で、アンインストールに
-  失敗する事があります。
+  強制的にアンインストールします。このオプションを指定した場合、意図しない
+  プリンタドライバまでアンインストールされる可能性があります。また、オプションを
+  指定しない場合は、対象となるプリンタドライバ等が他のプリンタに使用されている
+  などの理由で、アンインストールに失敗する事があります。
 * **-Retry COUNT**  
   プリンタ等のインストールまたはアンインストールに失敗した時に再試行する回数を
   指定します。
@@ -66,7 +68,6 @@ CubeVPC の実行コマンド例は下記の通りです。
 ```
 CubeVPC.exe CubePrinter.json
     -Command Reinstall
-    -Force
     -Relative
     -Resource Printers
     -Retry 6
