@@ -17,9 +17,9 @@ CubeVPM を使用するには .NET Framework 3.5 以降が必要です（4.5.2 �
 
 ## 使用方法
 
-![新しい仮想プリンタを追加](https://github.com/cube-soft/Cube.Vp/blob/master/Documents/Assets/Cube.Vp.Installer.Gui.01.png?raw=true)
+![新しい仮想プリンタを追加](https://github.com/cube-soft/Cube.Vp/blob/master/Documents/Assets/Cube.Vp.Installer.Gui.jp.01.png?raw=true)
 
-CubeVPM を初めて起動すると、上記のように新しい仮想プリンタを追加する画面が表示されます。
+CubeVPM を初めて起動すると、まず、新しい仮想プリンタを追加する画面が表示されます。
 追加時に設定する項目は下記の通りです。
 
 * **プリンタ名**  
@@ -53,7 +53,7 @@ CubeVPM を初めて起動すると、上記のように新しい仮想プリン
 
 登録された仮想プリンタは、下記の画面で管理されます。
 
-![登録された仮想プリンタ一覧](https://github.com/cube-soft/Cube.Vp/blob/master/Documents/Assets/Cube.Vp.Installer.Gui.02.png?raw=true)
+![登録された仮想プリンタ一覧](https://github.com/cube-soft/Cube.Vp/blob/master/Documents/Assets/Cube.Vp.Installer.Gui.jp.02.png?raw=true)
 
 プリンタ名以外の項目は、追加後に変更する事ができます。
 変更したい項目を修正した後、適用ボタンを押して下さい。
