@@ -16,10 +16,6 @@ CubeVPC を使用するには、.NET Framework 3.5 以降がインストール�
 * Download .NET Framework  
   https://dotnet.microsoft.com/download/dotnet-framework
 
-CubeVPC は、**C:\ProgramData\CubeSoft\CubePDF\Log** フォルダに実行ログを
-出力しています。問題が発生した時は、これらのログを添付して support@cube-soft.jp
-までご連絡お願いします。
-
 ## 使用方法
 
 ```
@@ -230,3 +226,9 @@ CubeVPC に指定する JSON ファイルの構成例は下記の通りです。
     }]
 }
 ```
+
+## 問題が発生した場合
+
+CubeVPC は、**C:\ProgramData\CubeSoft\CubePDF\Log** フォルダに実行ログを
+出力しています。問題が発生した時は、これらのログを添付して support@cube-soft.jp
+までご連絡お願いします。
