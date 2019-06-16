@@ -229,6 +229,6 @@ CubeVPC に指定する JSON ファイルの構成例は下記の通りです。
 
 ## 問題が発生した場合
 
-CubeVPC は、**C:\ProgramData\CubeSoft\CubePDF\Log** フォルダに実行ログを
+CubeVPC は、**C:\ProgramData\CubeSoft\CubeVP\Log** フォルダに実行ログを
 出力しています。問題が発生した時は、これらのログを添付して support@cube-soft.jp
 までご連絡お願いします。
