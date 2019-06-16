@@ -9,9 +9,8 @@ https://www.cube-soft.jp/
 
 Cube VirtualPrinter Console (CubeVPC) は、仮想プリンタのインストール
 およびアンインストールを実行するためのコマンドライン型アプリケーションです。
-CubeVPC を使用するには、.NET Framework 3.5 以降がインストールされている
-必要があります（.NET Framework 4.5 以降を強く推奨）。
-.NET Framework は、以下の URL からダウンロードして下さい。
+CubeVPC を使用するには .NET Framework 3.5 以降が必要です（4.5.2 以降を強く推奨）。
+もし、ご利用の端末にインストールされていない場合、以下の URL からダウンロードして下さい。
 
 * Download .NET Framework  
   https://dotnet.microsoft.com/download/dotnet-framework
