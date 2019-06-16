@@ -7,7 +7,25 @@ https://www.cube-soft.jp/
 
 ## 概要
 
-## サンプルプログラム
+[Cube.Pdf.Ghostscipt](https://www.nuget.org/packages/Cube.Pdf.Ghostscript/) は
+[Ghostscript](https://www.ghostscript.com/) を .NET Framework 上で利用するための
+ラッパーライブラリであり、.NET Framework 3.5 以降で利用可能な NuGet パッケージとして
+公開されています。利用したいプロジェクトで下記の PackageReference を記述するか、
+または Visual Studio の「参照の追加」機能を用いて追加して下さい。
+
+```
+<PackageReference Include="Cube.Pdf.Ghostscript" Version="2.1.16" />
+```
+
+Cube.* プロジェクトでは Ghostscript のライブラリを非公式な NuGet パッケージとして
+[Cube.Native.Ghostscript](https://www.nuget.org/packages/Cube.Native.Ghostscript) を
+公開しています。この NuGet パッケージは Cube.Pdf.Ghostscript の依存ライブラリとして
+登録されているため自動的に開発端末にダウンロードされますが、実行プログラムの存在する
+ディレクトリへのコピーは手動で行う必要があります。
+実行前に、packages/cube.native.ghostscript から必要なプラットフォーム (x86/x64) の
+gsdll32.dll をコピーして下さい。
+
+### サンプルプログラム
 
 簡単なサンプルとして、PostScript ファイルを PDF に変換するコードを記載します。
 PDF に変換する場合は PdfConverter クラスを利用します。ページサイズや解像度、

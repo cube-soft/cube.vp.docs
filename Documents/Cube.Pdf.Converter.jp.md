@@ -36,7 +36,7 @@ Cube.Pdf.Converter の動作に合致しないような処理を行いたい場�
 * [Cube.Pdf.Itext](https://www.nuget.org/packages/Cube.Pdf.Itext/)
 * [Cube.Pdf.Pdfium](https://www.nuget.org/packages/Cube.Pdf.Pdfium/)
 
-## サンプルプログラム
+### サンプルプログラム
 
 Cube.Pdf.Converter の最も簡単なサンプルプログラムは下記の通りです。
 
@@ -61,7 +61,7 @@ Cube.Pdf.Converter は、主に以下の 2 種類のクラスを用いて変換�
 SettingFolder はユーザ設定の読み込み・解析を担い、Facade クラスは SettingFolder の
 内容に応じて、実際に CubePDF における変換処理（メイン処理）を実行します。
 
-## API Reference
+## 詳細
 
 ### Facade
 
