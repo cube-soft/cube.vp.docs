@@ -193,15 +193,15 @@ CubeVPC に指定する JSON ファイルの構成例は下記の通りです。
 ```
 {
     "Printers" : [{
-        "Name"         : "CubePDF",
-        "ShareName"    : "CubePDF",
-        "DriverName"   : "CubePDF",
-        "PortName"     : "CubePDF:"
+        "Name"         : "CustomPDF",
+        "ShareName"    : "CustomPDF",
+        "DriverName"   : "CubeVPD",
+        "PortName"     : "CubeVP0:"
     }],
     "PrinterDrivers" : [{
-        "Name"         : "CubePDF",
-        "MonitorName"  : "CubeMon",
-        "Data"         : "cubepdf.ppd",
+        "Name"         : "CubeVPD",
+        "MonitorName"  : "CubeVpMon",
+        "Data"         : "cubevpd.ppd",
         "Repository"   : "ntprint",
         "FileName"     : "pscript5.dll",
         "Config"       : "ps5ui.dll",
@@ -209,19 +209,19 @@ CubeVPC に指定する JSON ファイルの構成例は下記の通りです。
         "Dependencies" : [ "pscript.ntf", "pscrptfe.ntf", "ps_schm.gdl" ]
     }],
     "Ports" : [{
-        "Name"         : "CubePDF:",
-        "MonitorName"  : "CubeMon",
+        "Name"         : "CubeVP0:",
+        "MonitorName"  : "CubeVpMon",
         "Application"  : "C:\\Program Files\\CubePDF\\CubePdf.exe",
-        "Proxy"        : "C:\\Program Files\\CubePDF\\CubeProxy.exe",
+        "Proxy"        : "C:\\Program Files\\CubeVP\\CubeProxy.exe",
         "Arguments"    : "",
-        "Temp"         : "C:\\ProgramData\\CubeSoft\\CubePDF",
+        "Temp"         : "C:\\ProgramData\\CubeSoft\\CubeVP",
         "WaitForExit"  : false,
         "RunAsUser"    : true
     }],
     "PortMonitors" : [{
-        "Name"         : "CubeMon",
-        "FileName"     : "cubemon.dll",
-        "Config"       : "cubemonui.dll"
+        "Name"         : "CubeVpMon",
+        "FileName"     : "cubevpmon.dll",
+        "Config"       : "cubevpmonui.dll"
     }]
 }
 ```
