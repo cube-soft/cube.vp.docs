@@ -70,6 +70,7 @@ Facade クラスのコンストラクタ、プロパティ、メソッドは下�
 ```cs
 // using System.Collections.Generics;
 // using System.Reflection;
+// using Cube.Pdf.Converter;
 
 public sealed class Facade
 {
@@ -100,8 +101,10 @@ SettingFolder クラスのコンストラクタ、プロパティ、メソッド
 
 ```cs
 // using System;
+// using System.Collections.Generics;
 // using System.Reflection;
 // using Cube.DataContract;
+// using Cube.Pdf.Converter;
 
 public sealed class SettingFolder
 {
@@ -114,7 +117,7 @@ public sealed class SettingFolder
 
     public void Load();
     public void Save();
-    public void Set(string[] args);
+    public void Set(IEnumerable<string> args);
 }
 ```
 

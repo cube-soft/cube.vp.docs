@@ -7,14 +7,14 @@ https://www.cube-soft.jp/
 
 ## 概要
 
-[Cube.Pdf.Ghostscipt](https://www.nuget.org/packages/Cube.Pdf.Ghostscript/) は
+[Cube.Pdf.Ghostscipt](https://www.nuget.org/packages/Cube.Pdf.Ghostscript) は
 [Ghostscript](https://www.ghostscript.com/) を .NET Framework 上で利用するための
 ラッパーライブラリであり、.NET Framework 3.5 以降で利用可能な NuGet パッケージとして
 公開されています。利用したいプロジェクトで下記の PackageReference を記述するか、
 または Visual Studio の「参照の追加」機能を用いて追加して下さい。
 
 ```
-<PackageReference Include="Cube.Pdf.Ghostscript" Version="2.1.16" />
+<PackageReference Include="Cube.Pdf.Ghostscript" Version="2.16.0" />
 ```
 
 Cube.* プロジェクトでは Ghostscript のライブラリを非公式な NuGet パッケージとして
@@ -33,6 +33,7 @@ PDF に変換する場合は PdfConverter クラスを利用します。ペー�
 値を設定し、Invoke メソッドを実行する事で変換が完了します。
 
 ```cs
+// using Cube.Pdf;
 // using Cube.Pdf.Ghostscript;
 
 var converter = new PdfConverter
@@ -64,6 +65,7 @@ Cube.Pdf.Ghostscript の基底クラスである [Converter](https://github.com/
 
 ```cs
 // using System.Collections.Generics;
+// using Cube.Pdf.Ghostscript;
 
 public class Converter
 {
@@ -96,6 +98,8 @@ Options 引数に Argument オブジェクトを追加します。
 クラスのコンストラクタは下記のようになっています。
 
 ```cs
+// using Cube.Pdf.Ghostscript;
+
 public class Argument
 {
     public Argument(string name, bool value);
