@@ -80,11 +80,11 @@ UserProgram.exe
 CubeVpMon 経由で実行可能なユーザプログラムを作成するには、下記の情報も参考にして下さい。
 
 * CubeVP API  
-  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Api.jp.md
+  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Api.ja.md
 * Cube.Pdf.Converter ... CubePDF 変換処理用ライブラリ
-  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.jp.md
+  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.ja.md
 * Cube.Pdf.Ghostscript ... Ghostscript ラッパーライブラリ
-  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Ghostscript.jp.md
+  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Ghostscript.ja.md
 
 ### CubeVPM: Cube VirtualPrinter Monitor
 
@@ -127,14 +127,14 @@ CubeVPM を初めて起動すると、まず、新しい仮想プリンタを追
 また、仮想プリンタが不要になった場合は、削除ボタンを押して下さい。
 
 CubeVPM に関する情報は、下記も参照下さい。  
-https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Gui.jp.md
+https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Gui.ja.md
 
 ### CubeVPC: Cube VirtualPrinter Console
 
 Cube VirtualPrinter Console (CubeVPC) は、仮想プリンタのインストール
 およびアンインストールを実行するためのコマンドライン型アプリケーションです。
 コマンドラインおよび設定用 JSON ファイルの詳細に関しては、下記を参照下さい。  
-https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Cli.jp.md
+https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Cli.ja.md
 
 ## 問題が発生した場合
 
