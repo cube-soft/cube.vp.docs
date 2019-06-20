@@ -149,9 +149,6 @@ CubeVPC に指定する構成用 JSON ファイルの仕様は下記の通りで
 * **Data** (string)  
   PostScript Printer Driver (PPD) ファイルを指定します。指定された PPD ファイルは
   **-Resource** オプションで指定されたディレクトリに存在するものとします。
-  尚、PPD ファイルには PCFileName と言う項目が存在します。
-  この項目と実際のファイル名が異なる場合、プリンタドライバのインストールに失敗する
-  現象が確認されています。
 * **FileName** (string)  
   モジュール名を指定します（例: pscript5.dll）。
 * **Config** (string)  
@@ -165,8 +162,7 @@ CubeVPC に指定する構成用 JSON ファイルの仕様は下記の通りで
   DriverStore ディレクトリから検索する際に使用します。例えば、64bit 環境において
   ntprint を指定した場合、  
   DriverStore/FileRepository/ntprint.ing_amd64_xxxxxxxxxxxxxxx/amd64  
-  からの取得を試みます。尚、DriverStore ディレクトリに各種モジュールが存在しなかった
-  場合、**-Resource** オプションで指定されたディレクトリを検索します。
+  からの取得を試みます。
 
 ### Printers
 
@@ -201,7 +197,7 @@ CubeVPC に指定する JSON ファイルの構成例は下記の通りです。
     "PrinterDrivers" : [{
         "Name"         : "CubeVPD",
         "MonitorName"  : "CubeVpMon",
-        "Data"         : "cubevpd.ppd",
+        "Data"         : "CubeVPD.ppd",
         "Repository"   : "ntprint",
         "FileName"     : "pscript5.dll",
         "Config"       : "ps5ui.dll",
