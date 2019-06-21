@@ -1,4 +1,4 @@
-CubeVP: Cube VirtualPrinter
+﻿CubeVP: Cube VirtualPrinter
 ====
 
 Copyright © 2010 CubeSoft, Inc.  
@@ -81,9 +81,9 @@ CubeVpMon 経由で実行可能なユーザプログラムを作成するには�
 
 * CubeVP API  
   https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Api.ja.md
-* Cube.Pdf.Converter ... CubePDF 変換処理用ライブラリ
+* Cube.Pdf.Converter ... CubePDF 変換処理用ライブラリ  
   https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.ja.md
-* Cube.Pdf.Ghostscript ... Ghostscript ラッパーライブラリ
+* Cube.Pdf.Ghostscript ... Ghostscript ラッパーライブラリ  
   https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Ghostscript.ja.md
 
 ### CubeVPM: Cube VirtualPrinter Monitor
