@@ -42,12 +42,13 @@ Cube.Pdf.Converter の最も簡単なサンプルプログラムは下記の通�
 
 ```cs
 // using Cube.Pdf.Converter;
+// using System.Reflection;
 
 static void Main(string[] args)
 {
-    var settings = new SettingFolder();
+    var settings = new SettingFolder(Assembly.GetExecutingAssembly());
     settings.Load();    // レジストリの設定をロード
-    settings.Set(args); // CubeVP 仮想プリンタ経由の場合
+    settings.Set(args); // 仮想プリンタからの引数を解析
 
     using (var facade = new Facade(settings)) facade.Invoke();
 }
