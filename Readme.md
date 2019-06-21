@@ -138,7 +138,7 @@ https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installe
 
 ## 問題が発生した場合
 
-CubeVPA は、**C:\ProgramData\CubeSoft\CubeVPA\Log** フォルダに実行ログを
+CubeVP は、**C:\ProgramData\CubeSoft\CubeVP\Log** フォルダに実行ログを
 出力しています。問題が発生した時は、これらのログを添付して support@cube-soft.jp
 までご連絡お願いします。
 
