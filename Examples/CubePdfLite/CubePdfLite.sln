@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubePdfLite", "CubePdfLite.csproj", "{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Debug|x64.ActiveCfg = Debug|x64
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Debug|x64.Build.0 = Debug|x64
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Debug|x86.ActiveCfg = Debug|x86
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Debug|x86.Build.0 = Debug|x86
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Release|x64.ActiveCfg = Release|x64
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Release|x64.Build.0 = Release|x64
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Release|x86.ActiveCfg = Release|x86
+		{93FB2C02-8CC5-478D-8DF4-FFAFA6D798AD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {962F1450-E7A1-4911-A97E-22C073642E81}
+	EndGlobalSection
+EndGlobal
