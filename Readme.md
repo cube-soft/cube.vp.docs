@@ -141,11 +141,21 @@ Cube VirtualPrinter Console (CubeVPC) は、仮想プリンタのインストー
 コマンドラインおよび設定用 JSON ファイルの詳細に関しては、下記を参照下さい。  
 https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Cli.ja.md
 
-## 問題が発生した場合
+## 問題が発生した場合、および改善要望について
 
 CubeVP は、**C:\ProgramData\CubeSoft\CubeVP\Log** フォルダに実行ログを
 出力しています。問題が発生した時は、これらのログを添付して support@cube-soft.jp
 までご連絡お願いします。
+
+公開ライブラリの利用方法が分からないなどの理由で、ドキュメントの加筆をご要望の場合
+[Issues](https://github.com/cube-soft/Cube.Vp.Docs/issues) にご登録下さい。
+ただし、全てのご要望に応えられるとは限らない点には、ご注意下さい。
+また、自身によって修正したドキュメント内容を適用して欲しい場合、下記の方法で
+[Pull Request (PR)](https://github.com/cube-soft/Cube.Vp.Docs/pulls) をお願いします。
+
+1. [Cube.Vp.Docs](https://github.com/cube-soft/Cube.Vp.Docs/fork) リポジトリを fork します。
+2. 自身の修正を fork したリポジトリに反映し、push します。
+3. GitHub 上で fork したリポジトリにアクセスし、New pull request ボタンから新しい Pull Request を作成します。
 
 ## 更新履歴
 
