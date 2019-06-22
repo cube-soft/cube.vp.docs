@@ -22,7 +22,7 @@ UserProgram.exe
     -UserName       USER_NAME
     -MachineName    MACHINE_NAME
     -DeleteOnClose
-    -Exec           Path\To\YourProgram.exe
+    -Exec           Path\To\UserProgram.exe
 ```
 
 それぞれの引数の内容は下記の通りです。
