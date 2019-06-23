@@ -7,9 +7,9 @@ https://www.cube-soft.jp/
 
 ## 概要
 
-[Cube.Pdf](https://github.com/cube-soft/Cube.Pdf) では、現在、
+[Cube.Pdf](https://github.com/cube-soft/Cube.Pdf) は現在、
 [Ghostscript](https://www.ghostscript.com/) および
-[PDFium](https://pdfium.googlesource.com/pdfium/) と言うライブラリに依存しています。
+[PDFium](https://pdfium.googlesource.com/pdfium/) と言う Native なライブラリに依存しています。
 また、これらのライブラリを簡単に利用するために、非公式な NuGet パッケージとして
 下記のものを公開しています。
 
@@ -27,7 +27,7 @@ https://www.cube-soft.jp/
 
 例えば、PackageReference 形式で上記のように Cube.Native.Ghostscript パッケージを
 参照した場合、Windows の初期設定では NuGet パッケージのフォルダ構成は下記のように
-なります。尚、*USER_NAME* はログオン中のユーザ名に置換して下さい。
+なります（*USER_NAME* はログオン中のユーザ名に置換して下さい）。
 
 ```
 C:\Users\USER_NAME\.nuget\packages
