@@ -17,8 +17,12 @@ CubeVP は、ユーザ独自の仮想プリンタを構築するためのソフ�
 * CubeVPC: Cube VirtualPrinter Console  
   仮想プリンタのインストールおよびアンインストール用コマンドライン型アプリケーション
 
-CubeVP の概要を知るための最初のステップとして、下記のチュートリアルを参照下さい。  
-https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Tutorial.ja.md
+CubeVP の概要を知るための最初のステップとして、下記を参照下さい。  
+
+* 目次  
+  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Index.ja.md
+* CubeVP チュートリアル  
+  https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Tutorial.ja.md
 
 CubeVP を使用するには、.NET Framework 3.5 以降が必要です（4.5.2 以降を強く推奨）。
 ご利用の端末にインストールされていない場合、以下の URL からダウンロードして下さい。
@@ -26,9 +30,8 @@ CubeVP を使用するには、.NET Framework 3.5 以降が必要です（4.5.2 
 * Download .NET Framework  
   https://dotnet.microsoft.com/download/dotnet-framework
 
-CubeVP の一部は、Apache License, Version 2.0 ライセンスで配布されている成果物を
-用いて実現されています。  
-http://www.apache.org/licenses/LICENSE-2.0
+CubeVP の一部は、[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+ライセンスで配布されている成果物を用いて実現されています。  
 
 ## 詳細
 
