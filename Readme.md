@@ -149,14 +149,18 @@ CubeVP は、**C:\ProgramData\CubeSoft\CubeVP\Log** フォルダに実行ログ�
 
 公開ライブラリの利用方法が分からないなどの理由で、ドキュメントの加筆をご要望の場合
 [Issues](https://github.com/cube-soft/Cube.Vp.Docs/issues) にご登録下さい。
-ただし、全てのご要望に応えられるとは限らない点には、ご注意下さい。
-また、自身によって修正したドキュメント内容を適用して欲しい場合、下記の方法で
-Pull Request (PR) をお願いします。
+ただし、全ての要望に応えられるとは限らない事、ご了承下さい。
+また、自身の手によって修正した内容を適用して欲しい場合、下記の方法で Pull Request
+をお願いします。
 
 1. 下記 URL から Cube.Vp.Docs リポジトリを fork します。  
    https://github.com/cube-soft/Cube.Vp.Docs/fork
 2. 自身の修正を fork したリポジトリに反映し、push します。
-3. GitHub 上で fork したリポジトリにアクセスし、New pull request ボタンから新しい Pull Request を作成します。
+3. GitHub 上で fork したリポジトリにアクセスし、New pull request ボタンから新しい
+   Pull Request を作成します。
+
+Cube.Pdf ライブラリへの修正についても、同様に Pull Request をお願いします。  
+https://github.com/cube-soft/Cube.Pdf
 
 ## 更新履歴
 
