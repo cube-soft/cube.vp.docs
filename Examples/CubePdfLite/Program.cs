@@ -60,7 +60,7 @@ namespace CubePdfLite
             // 対象とする JSON ファイルへの絶対パスを第 3 引数に指定して下さい。
             var settings = new SettingFolder(Assembly.GetExecutingAssembly());
 
-            // 2. Load() で対象としているレジストリ、または JSON ファイルからのロード、
+            // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
             // Set(string[]) で仮想プリンタからの引数を解析します。
             // 設定内容は Value プロパティに格納されています。
             // Value 中の各種プロパティは、手動で変更する事も可能です。
