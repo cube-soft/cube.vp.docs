@@ -47,8 +47,5 @@ CubePDF の変換処理に対して何らかのカスタマイズを行いたい
 [Cube.Pdf.Converter のドキュメント](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.ja.md) を参照下さい。
 また、[Examples/CubePdfLite](https://github.com/cube-soft/Cube.Vp.Docs/tree/master/Examples/CubePdfLite) には、
 今回使用した CubePDF Lite のプロジェクト一式がありますので、テンプレート用の
-プロジェクトとして利用する事もできます。その他、関連するドキュメントは下記の通りです。
-
-* [CubeVP API の説明](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Api.ja.md)
-* [CubeVPM (GUI インストーラ) の説明](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Gui.ja.md)
-* [CubeVPC (CLI インストーラ) の説明](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Vp.Installer.Cli.ja.md)
+プロジェクトとして利用する事もできます。その他のドキュメントは
+[目次](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Index.ja.md) を参照下さい。
