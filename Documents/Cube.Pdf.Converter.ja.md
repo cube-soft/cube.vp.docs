@@ -21,10 +21,11 @@ Cube.Pdf.Converter は [Ghostscript](https://www.ghostscript.com/) に依存し�
 また、Cube プロジェクトでは
 [Cube.Native.Ghostscript](https://www.nuget.org/packages/Cube.Native.Ghostscript)
 を非公式な NuGet パッケージとして公開しています。この NuGet パッケージは
-Cube.Pdf.Converter の依存ライブラリとして登録されているため自動的に開発端末に
-ダウンロードされますが、実行プログラムの存在するディレクトリへのコピーは手動で行う
-必要があります。実行前に、packages/cube.native.ghostscript から win-x86 または
-win-x64 どちらかのディレクトリにある gsdll32.dll をコピーして下さい。
+Cube.Pdf.Converter の依存ライブラリなので自動的に端末の packages フォルダに展開
+されますが、実行フォルダへのコピーは手動でで行う必要があります。
+Native ライブラリのコピーについては、
+[Native ライブラリのコピーについて](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Native.ja.md)
+を参照下さい。
 
 Cube.Pdf.Converter は、CubePDF の変換処理をエミュレートするなど、限定された用途の
 ために公開されているライブラリです。PDF の変換や編集に関する汎用的な操作など

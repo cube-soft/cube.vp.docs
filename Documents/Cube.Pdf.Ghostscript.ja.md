@@ -18,12 +18,12 @@ https://www.cube-soft.jp/
 ```
 
 Cube.* プロジェクトでは Ghostscript のライブラリを非公式な NuGet パッケージとして
-[Cube.Native.Ghostscript](https://www.nuget.org/packages/Cube.Native.Ghostscript) を
-公開しています。この NuGet パッケージは Cube.Pdf.Ghostscript の依存ライブラリとして
-登録されているため自動的に開発端末にダウンロードされますが、実行プログラムの存在する
-ディレクトリへのコピーは手動で行う必要があります。
-実行前に、packages/cube.native.ghostscript から必要なプラットフォーム (x86/x64) の
-gsdll32.dll をコピーして下さい。
+[Cube.Native.Ghostscript](https://www.nuget.org/packages/Cube.Native.Ghostscript)
+を公開しています。この NuGet パッケージは Cube.Pdf.Ghostscript の依存ライブラリ
+なので自動的に端末の packages フォルダに展開されますが、実行フォルダへのコピーは
+手動でで行う必要があります。Native ライブラリのコピーについては、
+[Native ライブラリのコピーについて](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Native.ja.md)
+を参照下さい。
 
 ### サンプルプログラム
 
