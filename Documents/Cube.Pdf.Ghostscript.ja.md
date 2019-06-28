@@ -64,7 +64,7 @@ Cube.Pdf.Ghostscript の基底クラスである [Converter](https://github.com/
 上記のコマンドラインを生成して変換を実行するための非常に薄いラッパーとなります。
 
 ```cs
-// using System.Collections.Generics;
+// using System.Collections.Generic;
 // using Cube.Pdf.Ghostscript;
 
 public class Converter

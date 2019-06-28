@@ -47,22 +47,23 @@ namespace CubePdfLite
         {
             // 1. 初期設定ではレジストリの下記のサブキーが対象となります。
             // HKCU\Software\CubeSoft\CubePDF\v2
-            // 例えば、HKCU\Software\Foo\Bar を対象とする場合、下記のように初期化して下さい。
+            // 対象とするサブキーを変更したい場合、コンストラクタで設定します。
+            // 例えば、HKCU\Software\Foo\Bar を対象とするには下記のように記述して下さい。
             //
             // var settings = new SettingFolder(
             //     Assembly.GetExecutingAssembly(),
-            //     Cube.DataContract.Registry,
+            //     Cube.DataContract.Format.Registry,
             //     @"Foo\Bar"
             // );
             //
-            // また、SettingFolder はレジストリ以外に、JSON 形式にも対応しています。
-            // JSON ファイルを対象とする場合、第 2 引数を Cube.DataContract.Json とし、
+            // また、SettingFolder はレジストリ以外に JSON 形式にも対応しています。
+            // JSON ファイルを対象とする場合、第 2 引数を Cube.DataContract.Format.Json とし、
             // 対象とする JSON ファイルへの絶対パスを第 3 引数に指定して下さい。
             var settings = new SettingFolder(Assembly.GetExecutingAssembly());
 
             // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
             // Set(string[]) で仮想プリンタからの引数を解析します。
-            // 設定内容は Value プロパティに格納されています。
+            // 設定内容は Value プロパティが保持します。
             // Value 中の各種プロパティは、手動で変更する事も可能です。
             settings.Load(); // レジストリの設定をロード
             settings.Value.Destination = GetDirectory(settings.Value, settings.IO);
