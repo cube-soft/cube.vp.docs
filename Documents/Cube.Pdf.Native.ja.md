@@ -1,4 +1,4 @@
-Native ライブラリのコピーについて
+How to copy native libraries
 ====
 
 Copyright © 2010 CubeSoft, Inc.  
