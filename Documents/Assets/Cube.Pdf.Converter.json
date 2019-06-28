@@ -1,0 +1,34 @@
+{
+  "LastAccess"        : "C:\\Users\\clown\\Desktop",
+  "FileType"          : 3,
+  "ExistedFile"       : 0,
+  "Orientation"       : 10,
+  "Resolution"        : 600,
+  "Downsampling"      : 0,
+  "ImageFilter"       : true,
+  "Grayscale"         : false,
+  "WebOptimize"       : false,
+  "PostProcess"       : 1,
+  "UserProgram"       : "",
+  "Temp"              : "C:\\ProgramData\\CubeSoft\\CubePDF",
+  "Metadata"          : {
+    "Title"             : "",
+    "Author"            : "",
+    "Subject"           : "",
+    "Keywords"          : "",
+    "Creator"           : "",
+    "Producer"          : "",
+    "Options"           : 2,
+    "Version"         : {
+      "Major"           : 1,
+      "Minor"           : 7,
+      "ExtensionLevel"  : 0,
+      "Subset"          : ""
+    }
+  },
+  "EmbedFonts"        : true,
+  "Language"          : 0,
+  "ExplicitDirectory" : false,
+  "SourceVisible"     : false,
+  "CheckUpdate"       : true
+}

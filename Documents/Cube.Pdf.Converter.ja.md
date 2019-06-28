@@ -124,13 +124,18 @@ public sealed class SettingFolder
 ```
 
 コンストラクタには Assembly オブジェクトおよびいくつかの付加的な情報を指定します。
+
 引数 *format* には Cube.DataContract.Format.Registry または Cube.DataContract.Format.Json
 のどちらかを指定し（Cube.DataContract.Format.Xml は非推奨）、それぞれレジストリまたは
-JSON ファイルから設定内容を読み込みます。
+JSON ファイルから設定内容を読み込みます。JSON ファイルの例は、
+[Cube.Pdf.Converter.json](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Assets/Cube.Pdf.Converter.json)
+を参照下さい。
+
 引数 *path* には、設定内容が保存されている場所を指定します。ただし、引数 *format* に
 Cube.DataContract.Format.Registry が指定された場合、設定内容は
 HKEY_CURRENT_USER\Software\path に存在するものと見なされます。
-尚、設定内容は Load メソッドを実行した時に読み込まれ、読み込み結果は Value プロパティに格納されます。
+
+設定内容は Load メソッドを実行した時に読み込まれ、読み込み結果は Value プロパティに格納されます。
 
 DocumentName プロパティは、仮想プリンタ経由で指定されたドキュメント名を表し、
 Digest プロパティは入力ファイルのハッシュ値を保持します。
