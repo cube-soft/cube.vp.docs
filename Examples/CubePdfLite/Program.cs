@@ -16,6 +16,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 /* ------------------------------------------------------------------------- */
+using Cube;
 using Cube.FileSystem;
 using Cube.Pdf.Converter;
 using System;
@@ -45,6 +46,11 @@ namespace CubePdfLite
         /* ----------------------------------------------------------------- */
         static void Main(string[] args)
         {
+            Logger.Configure();
+            Logger.ObserveTaskException();
+            Logger.Info(typeof(Program), Assembly.GetExecutingAssembly());
+            Logger.Info(typeof(Program), $"[ {string.Join(" ", args)} ]");
+
             // 1. 初期設定ではレジストリの下記のサブキーが対象となります。
             // HKCU\Software\CubeSoft\CubePDF\v2
             // 対象とするサブキーを変更したい場合、コンストラクタで設定します。
