@@ -1,34 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <Version>1.0.1</Version>
-    <Authors>clown;cube-soft</Authors>
-    <Company>CubeSoft</Company>
-    <Product>CubePDF Lite</Product>
-    <Copyright>Copyright © 2010 CubeSoft, Inc.</Copyright>
-    <AssemblyName>CubePdfLite</AssemblyName>
-    <AssemblyTitle>CubePDF Lite</AssemblyTitle>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net45</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <TargetFramework>net45</TargetFramework>
-    <Platforms>AnyCPU;x86;x64</Platforms>
-    <RuntimeIdentifiers>win7-x86;win7-x64</RuntimeIdentifiers>
-    <IsPackable>false</IsPackable>
-    <Optimize>true</Optimize>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <DefineConstants Condition=" '$(Configuration)' == 'Debug' ">DEBUG;TRACE</DefineConstants>
-    <ApplicationIcon>App.ico</ApplicationIcon>
-    <ApplicationManifest>App.manifest</ApplicationManifest>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
-    <OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Cube.Pdf.Converter" Version="1.0.0.21" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="App.ico" />
-    <None Include="App.manifest" />
-  </ItemGroup>
+    <PropertyGroup>
+        <Version>1.1.0</Version>
+        <Authors>clown;cube-soft</Authors>
+        <Company>CubeSoft</Company>
+        <Product>CubePDF Lite</Product>
+        <Copyright>Copyright © 2010 CubeSoft, Inc.</Copyright>
+        <AssemblyName>CubePdfLite</AssemblyName>
+        <AssemblyTitle>CubePDF Lite</AssemblyTitle>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net45</TargetFramework>
+        <Platforms>AnyCPU;x86;x64</Platforms>
+        <RuntimeIdentifiers>win7-x86;win7-x64</RuntimeIdentifiers>
+        <LangVersion>latest</LangVersion>
+        <IsPackable>false</IsPackable>
+        <Optimize>true</Optimize>
+        <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+        <DefineConstants Condition=" '$(Configuration)' == 'Debug' ">DEBUG;TRACE</DefineConstants>
+        <ApplicationIcon>App.ico</ApplicationIcon>
+        <ApplicationManifest>App.manifest</ApplicationManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+        <Prefer32Bit>true</Prefer32Bit>
+        <OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Cube.Pdf.Converter" Version="1.1.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.*" />
+    </ItemGroup>
 </Project>

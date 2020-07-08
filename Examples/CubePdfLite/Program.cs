@@ -46,7 +46,6 @@ namespace CubePdfLite
         /* ----------------------------------------------------------------- */
         static void Main(string[] args)
         {
-            Logger.Configure();
             Logger.ObserveTaskException();
             Logger.Info(typeof(Program), Assembly.GetExecutingAssembly());
             Logger.Info(typeof(Program), $"[ {string.Join(" ", args)} ]");
@@ -69,8 +68,11 @@ namespace CubePdfLite
 
             // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
             // Set(string[]) で仮想プリンタからの引数を解析します。
+            //
             // 設定内容は Value プロパティが保持します。
             // Value 中の各種プロパティは、手動で変更する事も可能です。
+            // 設定可能な内容については、下記も参照下さい。
+            // https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.ja.md
             settings.Load(); // レジストリの設定をロード
             settings.Value.Destination = GetDirectory(settings.Value, settings.IO);
             settings.Set(args); // 仮想プリンタからの引数を解析

@@ -155,8 +155,3 @@ CubeVP は、**C:\ProgramData\CubeSoft\CubeVP\Log** フォルダに実行ログ�
 
 Cube.Pdf ライブラリへの修正についても、同様に Pull Request をお願いします。  
 https://github.com/cube-soft/Cube.Pdf
-
-## 更新履歴
-
-* 2010/06/21 version 1.0.0
-    - 最初の公開バージョン

@@ -14,7 +14,7 @@ https://www.cube-soft.jp/
 記述するか、または Visual Studio の「参照の追加」機能を用いて追加して下さい。
 
 ```
-<PackageReference Include="Cube.Pdf.Converter" Version="1.0.0.20" />
+<PackageReference Include="Cube.Pdf.Converter" Version="1.1.0" />
 ```
 
 Cube.Pdf.Converter は [Ghostscript](https://www.ghostscript.com/) に依存しています。
@@ -22,7 +22,7 @@ Cube.Pdf.Converter は [Ghostscript](https://www.ghostscript.com/) に依存し�
 [Cube.Native.Ghostscript](https://www.nuget.org/packages/Cube.Native.Ghostscript)
 を非公式な NuGet パッケージとして公開しています。この NuGet パッケージは
 Cube.Pdf.Converter の依存ライブラリなので自動的に端末の packages フォルダに展開
-されますが、実行フォルダへのコピーは手動でで行う必要があります。
+されますが、場合によっては、実行フォルダへのコピーは手動で行う必要があります。
 Native ライブラリのコピーについては、
 [Native ライブラリのコピーについて](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Native.ja.md)
 を参照下さい。

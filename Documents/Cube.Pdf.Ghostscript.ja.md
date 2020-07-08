@@ -14,13 +14,13 @@ https://www.cube-soft.jp/
 または Visual Studio の「参照の追加」機能を用いて追加して下さい。
 
 ```
-<PackageReference Include="Cube.Pdf.Ghostscript" Version="2.16.0" />
+<PackageReference Include="Cube.Pdf.Ghostscript" Version="2.20.0" />
 ```
 
 Cube.* プロジェクトでは Ghostscript のライブラリを非公式な NuGet パッケージとして
 [Cube.Native.Ghostscript](https://www.nuget.org/packages/Cube.Native.Ghostscript)
 を公開しています。この NuGet パッケージは Cube.Pdf.Ghostscript の依存ライブラリ
-なので自動的に端末の packages フォルダに展開されますが、実行フォルダへのコピーは
+なので自動的に端末の packages フォルダに展開されますが、場合によっては、実行フォルダへのコピーは
 手動でで行う必要があります。Native ライブラリのコピーについては、
 [Native ライブラリのコピーについて](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Native.ja.md)
 を参照下さい。
