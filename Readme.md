@@ -162,3 +162,13 @@ CubeVP は、```C:\ProgramData\CubeSoft\CubeVP\Log``` フォルダに実行ロ�
 Cube.Pdf ライブラリへの修正についても、同様に
 [Cube.Pdf リポジトリ](https://github.com/cube-soft/Cube.Pdf) に対して
 Pull Request をお願いします。  
+
+## 更新履歴
+
+* 2020/10/27 version 1.2.0
+    - 仮想プリンターの再インストールが必要ない場合に省略するように修正
+    - 仮想プリンターのインストール処理を改善
+    - ログ出力用ライブラリを log4net から NLog に変更
+    - CubePDF SDK 3.0.0 へ更新
+* 2019/06/21 version 1.0.0
+    - 最初の公開バージョン
