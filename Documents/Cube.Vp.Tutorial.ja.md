@@ -8,7 +8,7 @@ https://www.cube-soft.jp/cubevp/
 ## 概要
 
 このドキュメントでは、CubeVP の使い方を学ぶ最初のステップとして、メイン画面の表示されない
-CubePDF を実行するための仮想プリンタを登録してみます。
+CubePDF を実行するための仮想プリンターを登録してみます。
 このチュートリアルを実行する前に [CubeVP の Web ページ](https://www.cube-soft.jp/cubevp/) より、
 あらかじめ評価版のインストールをお願いします。
 
@@ -27,21 +27,20 @@ C:\UserProgram
 ```
 
 解凍が完了したら、デスクトップのショートカット等から CubeVPM を起動します。
-起動すると、下図のような画面が表示されますので、プリンタ名は適当な名前、
+起動すると、下図のような画面が表示されますので、プリンター名は適当な名前、
 アプリケーションには先ほど解凍したフォルダにある CubePdfLite.exe を指定して OK ボタンを押します。
 
-![CubePdfLite.exe を指定して新しい仮想プリンタを作成](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Assets/Cube.Vp.Tutorial.ja.01.png?raw=true)
+![CubePdfLite.exe を指定して新しい仮想プリンターを作成](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Assets/Cube.Vp.Tutorial.ja.01.png?raw=true)
 
-これで仮想プリンタの作成は完了です。
+これで仮想プリンターの作成は完了です。
 Google Chrome など、適当なアプリケーションから印刷ボタンを押すと、
-先ほど作成した名前のプリンタが一覧に表示されるので、それを選択して印刷を実行してみます。
-初期設定では、変換された PDF ファイルがデスクトップに保存され、
-そのファイルが Adobe Acrobat Reader などの PDF ファイルに関連付けられたアプリケーションで表示されます。
+先ほど作成した名前のプリンターが一覧に表示されるので、それを選択して印刷を実行してみます。
+サンプルプログラムでは、変換された PDF ファイルがデスクトップに保存されます。
 
 ## 関連情報
 
 CubePDF の変換処理に対して何らかのカスタマイズを行いたい場合、
-[Cube.Pdf.Converter のドキュメント](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.ja.md) を参照下さい。
+[Cube.Pdf.Converter のドキュメント](https://docs.cube-soft.jp/entry/cubevp/sdk/converter) を参照下さい。
 また、[Examples/CubePdfLite](https://github.com/cube-soft/Cube.Vp.Docs/tree/master/Examples/CubePdfLite) には、
 今回使用した CubePDF Lite のプロジェクト一式がありますので、テンプレート用のプロジェクトとして利用する事もできます。
-その他のドキュメントは [目次](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Index.ja.md) を参照下さい。
+その他のドキュメントは [目次](https://docs.cube-soft.jp/entry/cubevp) を参照下さい。

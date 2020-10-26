@@ -65,9 +65,9 @@ namespace CubePdfLite
             var settings = new SettingFolder(Assembly.GetExecutingAssembly());
 
             // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
-            // Set(string[]) で仮想プリンタからの引数を解析します。
+            // Set(string[]) で仮想プリンターからの引数を解析します。
             settings.Load(); // レジストリの設定をロード
-            settings.Set(args); // 仮想プリンタからの引数を解析
+            settings.Set(args); // 仮想プリンターからの引数を解析
 
             // 3. 設定内容は Value プロパティが保持します。
             // Value 中の各種プロパティは、手動で変更する事も可能です。

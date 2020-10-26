@@ -14,7 +14,7 @@ https://www.cube-soft.jp/
 記述するか、または Visual Studio の「参照の追加」機能を用いて追加して下さい。
 
 ```
-<PackageReference Include="Cube.Pdf.Converter" Version="1.1.0" />
+<PackageReference Include="Cube.Pdf.Converter" Version="3.0.0" />
 ```
 
 Cube.Pdf.Converter は [Ghostscript](https://www.ghostscript.com/) に依存しています。
@@ -24,7 +24,7 @@ Cube.Pdf.Converter は [Ghostscript](https://www.ghostscript.com/) に依存し�
 Cube.Pdf.Converter の依存ライブラリなので自動的に端末の packages フォルダに展開
 されますが、場合によっては、実行フォルダへのコピーは手動で行う必要があります。
 Native ライブラリのコピーについては、
-[Native ライブラリのコピーについて](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Native.ja.md)
+[Native ライブラリのコピーについて](https://docs.cube-soft.jp/entry/cubevp/how-to-copy)
 を参照下さい。
 
 Cube.Pdf.Converter は、CubePDF の変換処理をエミュレートするなど、限定された用途の
@@ -49,7 +49,7 @@ static void Main(string[] args)
 {
     var settings = new SettingFolder(Assembly.GetExecutingAssembly());
     settings.Load();    // レジストリの設定をロード
-    settings.Set(args); // 仮想プリンタからの引数を解析
+    settings.Set(args); // 仮想プリンターからの引数を解析
 
     using (var facade = new Facade(settings)) facade.Invoke();
 }
@@ -60,8 +60,10 @@ Cube.Pdf.Converter は、主に以下の 2 種類のクラスを用いて変換�
 * [Facade](https://github.com/cube-soft/Cube.Pdf/blob/master/Applications/Converter/Core/Sources/Facade.cs)
 * [SettingFolder](https://github.com/cube-soft/Cube.Pdf/blob/master/Applications/Converter/Core/Sources/SettingFolder.cs)
 
-SettingFolder はユーザ設定の読み込み・解析を担い、Facade クラスは SettingFolder の
+SettingFolder はユーザー設定の読み込み・解析を担い、Facade クラスは SettingFolder の
 内容に応じて、実際に CubePDF における変換処理（メイン処理）を実行します。
+尚、このサンプルプログラムと同等の処理を実行するプロジェクトを
+[CubePdfLite](https://github.com/cube-soft/Cube.Vp.Docs/tree/master/Examples/CubePdfLite) にて公開しています。
 
 ## 詳細
 
@@ -137,7 +139,7 @@ HKEY_CURRENT_USER\Software\path に存在するものと見なされます。
 
 設定内容は Load メソッドを実行した時に読み込まれ、読み込み結果は Value プロパティに格納されます。
 
-DocumentName プロパティは、仮想プリンタ経由で指定されたドキュメント名を表し、
+DocumentName プロパティは、仮想プリンター経由で指定されたドキュメント名を表し、
 Digest プロパティは入力ファイルのハッシュ値を保持します。
 いずれも、読み取り専用プロパティであり、値の設定には Set メソッドを利用します。
 
@@ -183,7 +185,7 @@ Value プロパティは、レジストリまたは JSON ファイルから読�
   変換処理の終了後に実行される操作を表します。
   設定可能な値は、None, Open, OpenDirectory, Others の 4 種類です。
 * **UserProgram**  
-  変換処理の終了後に実行されるユーザプログラムのパスを表します。
+  変換処理の終了後に実行されるユーザープログラムのパスを表します。
   この設定は、PostProcess が Others 以外の時には無視されます。
 * **Temp**  
   一時ファイルを保存するためのディレクトリを表します。
@@ -200,10 +202,10 @@ Value プロパティは、いくつかのレジストリ等には保存され�
 
 * **Source**  
   変換元となるデータが保存されているパスを表します。
-  通常、Set メソッドを通じて、仮想プリンタより指定されたパスが設定されます。
+  通常、Set メソッドを通じて、仮想プリンターより指定されたパスが設定されます。
 * **DeleteSource**  
   変換処理終了後に Source で指定されたファイルを削除するかどうかを真偽値で表します。
-  通常、Set メソッドを通じて、仮想プリンタより指定された値が設定されます。
+  通常、Set メソッドを通じて、仮想プリンターより指定された値が設定されます。
 * **Encryption**  
   PDF のセキュリティ設定を表します。
   詳細は、[Encryption](https://github.com/cube-soft/Cube.Pdf/blob/master/Libraries/Core/Sources/Encryption.cs) を参照下さい。

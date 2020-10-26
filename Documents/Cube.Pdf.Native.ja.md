@@ -22,17 +22,17 @@ https://www.cube-soft.jp/
 最終的な実行フォルダーには手動でコピーする必要があります。
 
 ```
-<PackageReference Include="Cube.Native.Ghostscript" Version="9.52.0" />
+<PackageReference Include="Cube.Native.Ghostscript" Version="9.53.3" />
 ```
 
 例えば、PackageReference 形式で上記のように Cube.Native.Ghostscript パッケージを
 参照した場合、Windows の初期設定では NuGet パッケージのフォルダー構成は下記のように
-なります（*USER_NAME* はログオン中のユーザ名に置換して下さい）。
+なります（*USER_NAME* はログオン中のユーザー名に置換して下さい）。
 
 ```
 C:\Users\USER_NAME\.nuget\packages
     + cube.native.ghostscript
-        + 9.52.0
+        + 9.53.3
             + contents
                 + win_x86/native
                 + win_x64/native
