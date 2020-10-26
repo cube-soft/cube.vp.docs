@@ -16,11 +16,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 /* ------------------------------------------------------------------------- */
-using Cube;
-using Cube.FileSystem;
-using Cube.Pdf.Converter;
-using System;
 using System.Reflection;
+using Cube;
+using Cube.Pdf.Converter;
 
 namespace CubePdfLite
 {
@@ -68,41 +66,23 @@ namespace CubePdfLite
 
             // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
             // Set(string[]) で仮想プリンタからの引数を解析します。
-            //
-            // 設定内容は Value プロパティが保持します。
-            // Value 中の各種プロパティは、手動で変更する事も可能です。
-            // 設定可能な内容については、下記も参照下さい。
-            // https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Cube.Pdf.Converter.ja.md
             settings.Load(); // レジストリの設定をロード
-            settings.Value.Destination = GetDirectory(settings.Value, settings.IO);
             settings.Set(args); // 仮想プリンタからの引数を解析
 
-            // 3. 設定内容のロードが完了したら、Facade クラスで変換処理を実行します。
+            // 3. 設定内容は Value プロパティが保持します。
+            // Value 中の各種プロパティは、手動で変更する事も可能です。
+            // 例として、ここでは PostProcess を「何もしない」に設定しています。
+            // 設定可能な内容については、下記も参照下さい。
+            // https://docs.cube-soft.jp/entry/cubevp/sdk/converter
+            //
+            // 尚、CubePDF SDK 3.0.0 より Set(string[]) 実行時に
+            // Destination から末尾のファイル名を除去（DocumaneName.Value に置換）
+            // する形に変更されました。そのため、1.0.0 時に Destination に対して
+            // 行っていた処理は不要となりました。
+            settings.Value.PostProcess = PostProcess.None;
+
+            // 4. 設定内容のロードが完了したら、Facade クラスで変換処理を実行します。
             using (var facade = new Facade(settings)) facade.Invoke();
         }
-
-        /* ----------------------------------------------------------------- */
-        ///
-        /// GetDirectory
-        ///
-        /// <summary>
-        /// レジストリからロードされた内容はファイル名が含まれている可能性があります。
-        /// このメソッドでは、フォルダ名と予想されるパスを返します。
-        /// </summary>
-        ///
-        /* ----------------------------------------------------------------- */
-        static string GetDirectory(SettingValue src, IO io)
-        {
-            var desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
-            try
-            {
-                if (string.IsNullOrEmpty(src.Destination)) return desktop;
-                var dest = io.Get(src.Destination);
-                return dest.IsDirectory ? dest.FullName : dest.DirectoryName;
-            }
-            catch { return desktop; }
-        }
-
     }
 }
