@@ -10,7 +10,7 @@ https://www.cube-soft.jp/cubevp/
 このドキュメントでは、CubeVP の使い方を学ぶ最初のステップとして、メイン画面の表示されない
 CubePDF を実行するための仮想プリンターを登録してみます。
 このチュートリアルを実行する前に [CubeVP の Web ページ](https://www.cube-soft.jp/cubevp/) より、
-あらかじめ評価版のインストールをお願いします。
+あらかじめ CubeVP のインストールをお願いします。
 
 まず、[Releases - Cube.Vp.Docs](https://github.com/cube-soft/Cube.Vp.Docs/releases) から
 CubePDF の変換処理のみを実行する CubePDF Lite をダウンロードします。
@@ -44,5 +44,5 @@ Google Chrome など、適当なアプリケーションから印刷ボタンを
 CubePDF の変換処理に対して何らかのカスタマイズを行いたい場合、
 [Cube.Pdf.Converter のドキュメント](https://docs.cube-soft.jp/entry/cubevp/sdk/converter) を参照下さい。
 また、[Examples/CubePdfLite](https://github.com/cube-soft/Cube.Vp.Docs/tree/master/Examples/CubePdfLite) には、
-今回使用した CubePDF Lite のプロジェクト一式がありますので、テンプレート用のプロジェクトとして利用する事もできます。
+今回使用した CubePDF Lite のプロジェクト一式を公開しているので、テンプレート用のプロジェクトとして利用する事もできます。
 その他のドキュメントは [目次](https://docs.cube-soft.jp/entry/cubevp) を参照下さい。
