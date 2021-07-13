@@ -9,12 +9,12 @@ https://www.cube-soft.jp/
 
 [Cube.Pdf.Converter](https://www.nuget.org/packages/Cube.Pdf.Converter/) は
 [CubePDF](https://www.cube-soft.jp/cubepdf/) で使用される PostScript から PDF 等への
-変換処理を提供するライブラリで、.NET Framework 3.5 以降で利用可能な NuGet
-パッケージとして公開されています。利用したいプロジェクトで下記の PackageReference を
-記述するか、または Visual Studio の「参照の追加」機能を用いて追加して下さい。
+変換処理を提供するライブラリで、.NET Framework 3.5 以降、および .NET Standard 2.0 以降で
+利用可能な NuGet パッケージとして公開されています。利用したいプロジェクトで下記の
+PackageReference を記述するか、または Visual Studio の「参照の追加」機能を用いて追加して下さい。
 
 ```
-<PackageReference Include="Cube.Pdf.Converter" Version="3.0.0" />
+<PackageReference Include="Cube.Pdf.Converter" Version="4.0.0" />
 ```
 
 Cube.Pdf.Converter は [Ghostscript](https://www.ghostscript.com/) に依存しています。
@@ -43,11 +43,10 @@ Cube.Pdf.Converter の最も簡単なサンプルプログラムは下記の通�
 
 ```cs
 // using Cube.Pdf.Converter;
-// using System.Reflection;
 
 static void Main(string[] args)
 {
-    var settings = new SettingFolder(Assembly.GetExecutingAssembly());
+    var settings = new SettingFolder();
     settings.Load();    // レジストリの設定をロード
     settings.Set(args); // 仮想プリンターからの引数を解析
 
@@ -78,24 +77,26 @@ Facade クラスのコンストラクタ、プロパティ、メソッドは下�
 
 public sealed class Facade
 {
+    public Facade();
     public Facade(Assembly assembly);
     public Facade(SettingFolder settings);
 
     public SettingFolder Settings { get; }
     public IEnumerable<string> Results { get; }
+    public bool Busy { get; }
 
     public void Invoke();
 }
 ```
 
-コンストラクタには、Assembly オブジェクトまたは SettingFolder オブジェクトを指定
-します。Assembly オブジェクトを指定した場合、Facade クラスは指定された内容を用いて
-初期状態の SettingFolder オブジェクトを生成し、その設定内容を利用します。
+コンストラクタは、引数無しで実行可能な他、Assembly オブジェクトまたは SettingFolder
+オブジェクトを指定する事もできます。Assembly オブジェクトを指定した場合、Facade クラスは
+指定された内容を用いて初期状態の SettingFolder オブジェクトを生成し、その設定内容を利用します。
 設定内容は、Settings プロパティを通じて後から変更する事も可能です。
 
 Invoke メソッドは、現在の設定内容にしたがって CubePDF の変換処理を実行します。
 実行後、最終的に保存されたファイルのパス一覧が Results に格納されます。
-変換形式として PNG や JPEG などの複数ページを保持できないものを指定した場合、
+これは、変換形式として PNG や JPEG などの複数ページを保持できないものを指定した場合、
 Settings で指定した保存先パスと実際に生成されるファイルのパスが異なる事があるため、
 その確認に用いられます。
 
@@ -107,13 +108,15 @@ SettingFolder クラスのコンストラクタ、プロパティ、メソッド
 // using System;
 // using System.Collections.Generic;
 // using System.Reflection;
-// using Cube.DataContract;
+// using Cube.FileSystem.DataContract;
 // using Cube.Pdf.Converter;
 
 public sealed class SettingFolder
 {
+    public SettingFolder();
     public SettingFolder(Assembly assembly);
-    public SettingFolder(Assembly assembly, Format format, string path);
+    public SettingFolder(Format format, string location);
+    public SettingFolder(Assembly assembly, Format format, string location);
 
     public SettingValue Value { get; }
     public DocumentName DocumentName { get; }
@@ -133,9 +136,9 @@ JSON ファイルから設定内容を読み込みます。JSON ファイルの�
 [Cube.Pdf.Converter.json](https://github.com/cube-soft/Cube.Vp.Docs/blob/master/Documents/Assets/Cube.Pdf.Converter.json)
 を参照下さい。
 
-引数 *path* には、設定内容が保存されている場所を指定します。ただし、引数 *format* に
-Cube.DataContract.Format.Registry が指定された場合、設定内容は
-HKEY_CURRENT_USER\Software\path に存在するものと見なされます。
+引数 *location* には、設定内容が保存されている場所を指定します。ただし、引数 *format* に
+Cube.FileSystem.DataContract.Format.Registry が指定された場合、設定内容は
+HKEY_CURRENT_USER\Software\location に存在するものと見なされます。
 
 設定内容は Load メソッドを実行した時に読み込まれ、読み込み結果は Value プロパティに格納されます。
 
@@ -209,5 +212,3 @@ Value プロパティは、いくつかのレジストリ等には保存され�
 * **Encryption**  
   PDF のセキュリティ設定を表します。
   詳細は、[Encryption](https://github.com/cube-soft/Cube.Pdf/blob/master/Libraries/Core/Sources/Encryption.cs) を参照下さい。
-* **Busy**  
-  関連付けられた Facade クラスが変換処理中かどうかを真偽値で表します。

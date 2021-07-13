@@ -22,7 +22,7 @@ https://www.cube-soft.jp/
 最終的な実行フォルダーには手動でコピーする必要があります。
 
 ```
-<PackageReference Include="Cube.Native.Ghostscript" Version="9.53.3" />
+<PackageReference Include="Cube.Native.Ghostscript" Version="9.54.0" />
 ```
 
 例えば、PackageReference 形式で上記のように Cube.Native.Ghostscript パッケージを
@@ -32,7 +32,7 @@ https://www.cube-soft.jp/
 ```
 C:\Users\USER_NAME\.nuget\packages
     + cube.native.ghostscript
-        + 9.53.3
+        + 9.54.0
             + contents
                 + win_x86/native
                 + win_x64/native

@@ -14,7 +14,7 @@ https://www.cube-soft.jp/
 または Visual Studio の「参照の追加」機能を用いて追加して下さい。
 
 ```
-<PackageReference Include="Cube.Pdf.Ghostscript" Version="3.0.0" />
+<PackageReference Include="Cube.Pdf.Ghostscript" Version="4.0.0" />
 ```
 
 Cube.* プロジェクトでは Ghostscript のライブラリを非公式な NuGet パッケージとして
