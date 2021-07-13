@@ -16,8 +16,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 /* ------------------------------------------------------------------------- */
-using System.Reflection;
-using Cube;
+using Cube.Logging;
 using Cube.Pdf.Converter;
 
 namespace CubePdfLite
@@ -44,9 +43,11 @@ namespace CubePdfLite
         /* ----------------------------------------------------------------- */
         static void Main(string[] args)
         {
-            Logger.ObserveTaskException();
-            Logger.Info(typeof(Program), Assembly.GetExecutingAssembly());
-            Logger.Info(typeof(Program), $"[ {string.Join(" ", args)} ]");
+            // ログ出力用の処理です。不要な場合、削除して構いません。
+            var src = typeof(Program);
+            _ = Logger.ObserveTaskException();
+            src.LogInfo(src.Assembly);
+            src.LogInfo($"[ {string.Join(" ", args)} ]");
 
             // 1. 初期設定ではレジストリの下記のサブキーが対象となります。
             // HKCU\Software\CubeSoft\CubePDF\v2
@@ -54,20 +55,20 @@ namespace CubePdfLite
             // 例えば、HKCU\Software\Foo\Bar を対象とするには下記のように記述して下さい。
             //
             // var settings = new SettingFolder(
-            //     Assembly.GetExecutingAssembly(),
-            //     Cube.DataContract.Format.Registry,
+            //     Cube.FileSystem.DataContract.Format.Registry,
             //     @"Foo\Bar"
             // );
             //
             // また、SettingFolder はレジストリ以外に JSON 形式にも対応しています。
-            // JSON ファイルを対象とする場合、第 2 引数を Cube.DataContract.Format.Json とし、
-            // 対象とする JSON ファイルへの絶対パスを第 3 引数に指定して下さい。
-            var settings = new SettingFolder(Assembly.GetExecutingAssembly());
+            // JSON ファイルを対象とする場合、第 1 引数を Cube.FileSystem.DataContract.Format.Json とし、
+            // 対象とする JSON ファイルへの絶対パスを第 2 引数に指定して下さい。
+            var settings = new SettingFolder();
 
             // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
             // Set(string[]) で仮想プリンターからの引数を解析します。
-            settings.Load(); // レジストリの設定をロード
-            settings.Set(args); // 仮想プリンターからの引数を解析
+            // レジストリ等の内容を読み込む必要がない場合、Load() メソッドは省略できます。
+            settings.Load();
+            settings.Set(args);
 
             // 3. 設定内容は Value プロパティが保持します。
             // Value 中の各種プロパティは、手動で変更する事も可能です。
