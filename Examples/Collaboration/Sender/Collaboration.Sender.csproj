@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Version>4.0.2</Version>
+        <Authors>clown;cube-soft</Authors>
+        <Company>CubeSoft</Company>
+        <Product>CoSender</Product>
+        <Copyright>Copyright © 2010 CubeSoft, Inc.</Copyright>
+        <AssemblyName>CoSender</AssemblyName>
+        <AssemblyTitle>Sender for CubeVP Collaboration</AssemblyTitle>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net45</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <Platforms>AnyCPU;x86;x64</Platforms>
+        <RuntimeIdentifiers>win7-x86;win7-x64</RuntimeIdentifiers>
+        <LangVersion>latest</LangVersion>
+        <IsPackable>false</IsPackable>
+        <Optimize>true</Optimize>
+        <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+        <DefineConstants Condition=" '$(Configuration)' == 'Debug' ">DEBUG;TRACE</DefineConstants>
+        <ApplicationIcon>App.ico</ApplicationIcon>
+        <ApplicationManifest>App.manifest</ApplicationManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+        <Prefer32Bit>true</Prefer32Bit>
+        <OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Cube.Pdf.Converter" Version="4.0.2" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.*" />
+    </ItemGroup>
+</Project>
