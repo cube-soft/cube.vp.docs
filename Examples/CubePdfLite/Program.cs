@@ -44,10 +44,7 @@ namespace CubePdfLite
         static void Main(string[] args)
         {
             // ログ出力用の処理です。不要な場合、削除して構いません。
-            var src = typeof(Program);
-            _ = Logger.ObserveTaskException();
-            src.LogInfo(src.Assembly);
-            src.LogInfo($"[ {string.Join(" ", args)} ]");
+            InitLog(args);
 
             // 1. 初期設定ではレジストリの下記のサブキーが対象となります。
             // HKCU\Software\CubeSoft\CubePDF\v2
@@ -84,6 +81,23 @@ namespace CubePdfLite
 
             // 4. 設定内容のロードが完了したら、Facade クラスで変換処理を実行します。
             using (var facade = new Facade(settings)) facade.Invoke();
+        }
+
+        /* ----------------------------------------------------------------- */
+        ///
+        /// InitLog
+        ///
+        /// <summary>
+        /// ログ出力に関する初期設定を実行します。
+        /// </summary>
+        ///
+        /* ----------------------------------------------------------------- */
+        private static void InitLog(string[] args)
+        {
+            var src = typeof(Program);
+            _ = Logger.ObserveTaskException();
+            src.LogInfo(src.Assembly);
+            src.LogInfo($"[ {string.Join(" ", args)} ]");
         }
     }
 }
