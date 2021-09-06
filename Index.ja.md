@@ -25,6 +25,11 @@ https://www.cube-soft.jp/cubevp/
 * [Native ライブラリのコピー方法](https://docs.cube-soft.jp/entry/cubevp/sdk/how-to-copy)  
   CubePDF が依存する Native なライブラリのコピーおよび利用方法
 
+### その他のドキュメント
+
+* [プログラム連携](https://docs.cube-soft.jp/entry/cubevp/collaboration)  
+  CubeVP における印刷前後のプログラムを連携させる方法について
+
 ### その他のリソース
 
 * [CubePdfLite](https://github.com/cube-soft/Cube.Vp.Docs/tree/master/Examples/CubePdfLite)  
