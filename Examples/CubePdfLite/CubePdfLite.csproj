@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <Version>4.0.2</Version>
+        <Version>5.0.0</Version>
         <Authors>clown;cube-soft</Authors>
         <Company>CubeSoft</Company>
         <Product>CubePDF Lite</Product>
@@ -24,7 +24,7 @@
         <OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Cube.Pdf.Converter" Version="4.0.2" />
+        <PackageReference Include="Cube.Pdf.Converter" Version="5.0.0" />
     </ItemGroup>
     <ItemGroup>
         <None Include="App.*" />
