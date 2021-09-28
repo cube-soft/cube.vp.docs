@@ -165,7 +165,7 @@ Pull Request をお願いします。
 
 ## 更新履歴
 
-* 2021-09-27 version 5.0.0
+* 2021-09-29 version 5.0.0
     - CubePDF SDK 5.0.0 へ更新
 * 2021-09-07 version 4.0.2
     - CubePDF SDK 4.0.2 へ更新
