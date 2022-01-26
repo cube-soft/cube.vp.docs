@@ -21,8 +21,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
 using System.Windows.Forms;
-using Cube.FileSystem.DataContract;
-using Cube.Logging;
+using Cube.DataContract;
 using Cube.Pdf.Converter;
 
 namespace Collaboration.Sender
@@ -113,9 +112,9 @@ namespace Collaboration.Sender
         private static void InitLog(string[] args)
         {
             var src = typeof(Program);
-            _ = Logger.ObserveTaskException();
-            src.LogInfo(src.Assembly);
-            src.LogInfo($"[ {string.Join(" ", args)} ]");
+            _ = Cube.Logger.ObserveTaskException();
+            Cube.Logger.LogInfo(src, src.Assembly);
+            Cube.Logger.LogInfo(src, $"[ {string.Join(" ", args)} ]");
         }
     }
 }

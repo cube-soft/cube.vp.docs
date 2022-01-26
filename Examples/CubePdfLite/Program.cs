@@ -16,7 +16,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 /* ------------------------------------------------------------------------- */
-using Cube.Logging;
 using Cube.Pdf.Converter;
 
 namespace CubePdfLite
@@ -52,12 +51,12 @@ namespace CubePdfLite
             // 例えば、HKCU\Software\Foo\Bar を対象とするには下記のように記述して下さい。
             //
             // var settings = new SettingFolder(
-            //     Cube.FileSystem.DataContract.Format.Registry,
+            //     Cube.DataContract.Format.Registry,
             //     @"Foo\Bar"
             // );
             //
             // また、SettingFolder はレジストリ以外に JSON 形式にも対応しています。
-            // JSON ファイルを対象とする場合、第 1 引数を Cube.FileSystem.DataContract.Format.Json とし、
+            // JSON ファイルを対象とする場合、第 1 引数を Cube.DataContract.Format.Json とし、
             // 対象とする JSON ファイルへの絶対パスを第 2 引数に指定して下さい。
             var settings = new SettingFolder();
 
@@ -95,9 +94,9 @@ namespace CubePdfLite
         private static void InitLog(string[] args)
         {
             var src = typeof(Program);
-            _ = Logger.ObserveTaskException();
-            src.LogInfo(src.Assembly);
-            src.LogInfo($"[ {string.Join(" ", args)} ]");
+            _ = Cube.Logger.ObserveTaskException();
+            Cube.Logger.LogInfo(src, src.Assembly);
+            Cube.Logger.LogInfo(src, $"[ {string.Join(" ", args)} ]");
         }
     }
 }
