@@ -29,7 +29,7 @@ CubeVP の概要を知るための最初のステップとして、下記を参�
 * CubeVP チュートリアル  
   https://docs.cube-soft.jp/entry/cubevp/tutorial
 
-CubeVP を使用するには .NET Framework 3.5 以降が必要です（4.5.2 以降を強く推奨）。
+CubeVP を使用するには .NET Framework 3.5 以降が必要です（4.7 以降を強く推奨）。
 ご利用の端末にインストールされていない場合、以下の URL からダウンロードして下さい。
 
 * Download .NET Framework  
@@ -165,6 +165,9 @@ Pull Request をお願いします。
 
 ## 更新履歴
 
+* 2022-09-08 version 7.0.0
+    - 推奨動作環境を .NET Framework 4.7 以降に変更
+    - CubePDF SDK 7.0.2 へ更新
 * 2022-01-28 version 6.0.0
     - CubePDF SDK 6.0.2 へ更新
 * 2021-09-29 version 5.0.0
