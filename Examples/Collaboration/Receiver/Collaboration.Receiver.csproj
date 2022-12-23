@@ -8,7 +8,7 @@
         <AssemblyName>CoReceiver</AssemblyName>
         <AssemblyTitle>Receiver for CubeVP Collaboration</AssemblyTitle>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net47</TargetFramework>
+        <TargetFramework>net35</TargetFramework>
         <Platforms>AnyCPU;x86;x64</Platforms>
         <RuntimeIdentifiers>win7-x86;win7-x64</RuntimeIdentifiers>
         <LangVersion>latest</LangVersion>
