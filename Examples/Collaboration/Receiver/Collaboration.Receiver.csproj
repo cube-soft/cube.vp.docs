@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <Version>7.1.0</Version>
+        <Version>7.1.1</Version>
         <Authors>clown;cube-soft</Authors>
         <Company>CubeSoft</Company>
         <Product>CoReceiver</Product>
@@ -24,7 +24,7 @@
         <OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Cube.Pdf.Converter" Version="7.1.0" />
+        <PackageReference Include="Cube.Pdf.Converter" Version="7.1.1" />
     </ItemGroup>
     <ItemGroup>
         <None Include="App.*" />
