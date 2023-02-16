@@ -18,10 +18,6 @@ https://www.cube-soft.jp/cubevp/
 * CubeVPC: Cube VirtualPrinter Console  
   仮想プリンターのインストールおよびアンインストール用コマンドライン型アプリケーション
 
-また、仮想プリンターと連携するユーザープログラムの作成補助として、
-別途 [CubePDF SDK](https://github.com/cube-soft/Cube.Pdf) を公開しています。
-これは、CubePDF で使用されている変換処理をそのままライブラリ化したものとなっています。
-
 CubeVP の概要を知るための最初のステップとして、下記を参照下さい。
 
 * 目次  
@@ -36,7 +32,10 @@ CubeVP を使用するには .NET Framework 3.5 以降が必要です（4.7 以�
   https://dotnet.microsoft.com/download/dotnet-framework
 
 CubeVP の一部は、[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-ライセンスで配布されている成果物を用いて実現されています。  
+ライセンスで配布されている成果物を用いて実現されています。
+また、仮想プリンターと連携するユーザープログラムの作成補助として、
+別途 [CubePDF SDK](https://github.com/cube-soft/Cube.Pdf) を公開しています。
+これは、CubePDF で使用されている変換処理をそのままライブラリ化したものとなっています。
 
 ## 詳細
 
@@ -165,6 +164,11 @@ Pull Request をお願いします。
 
 ## 更新履歴
 
+* 2023-02-21 version 7.1.1
+    - 内部処理を改善
+    - CubePDF SDK 7.1.1 へ更新
+* 2022-12-23 version 7.1.0
+    - CubePDF SDK 7.1.0 へ更新
 * 2022-09-08 version 7.0.0
     - 推奨動作環境を .NET Framework 4.7 以降に変更
     - CubePDF SDK 7.0.2 へ更新
