@@ -111,10 +111,10 @@ namespace Collaboration.Sender
         /* ----------------------------------------------------------------- */
         private static void InitLog(string[] args)
         {
-            var src = typeof(Program);
-            _ = Cube.Logger.ObserveTaskException();
-            Cube.Logger.LogInfo(src, src.Assembly);
-            Cube.Logger.LogInfo(src, $"[ {string.Join(" ", args)} ]");
+            Cube.Logger.Configure(new Cube.Logging.NLog.LoggerSource());
+            Cube.Logger.ObserveTaskException();
+            Cube.Logger.Info(typeof(Program).Assembly);
+            Cube.Logger.Info($"[ {string.Join(" ", args)} ]");
         }
     }
 }
