@@ -46,7 +46,7 @@ namespace CubePdfLite
             InitLog(args);
 
             // 1. 初期設定ではレジストリの下記のサブキーが対象となります。
-            // HKCU\Software\CubeSoft\CubePDF\v2
+            // HKCU\Software\CubeSoft\CubePDF\v3
             // 対象とするサブキーを変更したい場合、コンストラクタで設定します。
             // 例えば、HKCU\Software\Foo\Bar を対象とするには下記のように記述して下さい。
             //
@@ -62,7 +62,12 @@ namespace CubePdfLite
 
             // 2. Load() で対象としているレジストリ等から設定内容を読み込み、
             // Set(string[]) で仮想プリンターからの引数を解析します。
-            // レジストリ等の内容を読み込む必要がない場合、Load() メソッドは省略できます。
+            // 尚、レジストリ等の内容を読み込む必要がない場合、Load() メソッドは省略できます。
+            //
+            // また、CubePDF SDK 7.x から 8.x へのバージョンアップ時に設定内容が一部変更されました。
+            // 旧バージョンの設定内容を引き続き利用する場合、
+            // Load() メソッドの代わりに Migrate() メソッドを使用して下さい。
+            // settings.Migrate(@"CubeSoft\CubePDF\v2");
             settings.Load();
             settings.Set(args);
 
