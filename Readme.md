@@ -164,6 +164,9 @@ Pull Request をお願いします。
 
 ## 更新履歴
 
+* 2024-03-29 version 8.7.0
+    - Arm64 版のファイル構成を変更
+    - CubePDF SDK 8.7.0 へ更新
 * 2023-09-06 version 8.5.0
     - ARM64 版 Windows に対応
     - 内部処理を改善
