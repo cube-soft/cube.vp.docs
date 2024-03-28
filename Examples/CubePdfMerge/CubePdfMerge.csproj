@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <Version>8.7.0</Version>
+        <Version>1.0.1</Version>
         <Authors>clown;cube-soft</Authors>
         <Company>CubeSoft</Company>
-        <Product>CoReceiver</Product>
+        <Product>CubePDF Merge</Product>
         <Copyright>Copyright © 2010 CubeSoft, Inc.</Copyright>
-        <AssemblyName>CoReceiver</AssemblyName>
-        <AssemblyTitle>Receiver for CubeVP Collaboration</AssemblyTitle>
+        <AssemblyName>CubePdfMerge</AssemblyName>
+        <AssemblyTitle>CubePDF Merge</AssemblyTitle>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net35</TargetFramework>
+        <TargetFramework>net461</TargetFramework>
         <Platforms>AnyCPU;x86;x64</Platforms>
         <RuntimeIdentifiers>win7-x86;win7-x64</RuntimeIdentifiers>
         <LangVersion>latest</LangVersion>
@@ -24,10 +24,11 @@
         <OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Cube.Pdf.Converter" Version="8.7.0" />
+        <PackageReference Include="Cube.Pdf.Itext" Version="8.7.0" />
         <PackageReference Include="Cube.Logging.NLog" Version="8.6.1" />
     </ItemGroup>
     <ItemGroup>
         <None Include="App.*" />
+        <None Include="NLog.config" CopyToOutputDirectory="Always" />
     </ItemGroup>
 </Project>
